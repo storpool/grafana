@@ -100,15 +100,15 @@ export interface Props {
 
 export const Footer = React.memo(({ customLinks, hideEdition }: Props) => {
   const links = (customLinks || getFooterLinks()).concat(getVersionLinks(hideEdition));
+  const d = new Date();
+  const year = d.getFullYear();
+
 
   return (
     <footer className="footer">
       <div className="text-center">
         <ul>
-          {links.map((link) => (
-            <li key={link.text}>
-              <FooterItem item={link} />
-            </li>
+               Copyright &copy; {year} <a href="http://storpool.com" target="_blank">StorPool Storage</a>.
           ))}
         </ul>
       </div>
