@@ -2,7 +2,7 @@ import React from 'react';
 
 import { LinkTarget } from '@grafana/data';
 import { config } from '@grafana/runtime';
-import { Icon, IconName } from '@grafana/ui';
+import { IconName } from '@grafana/ui';
 import { t } from 'app/core/internationalization';
 
 export interface FooterLink {
@@ -99,11 +99,6 @@ export interface Props {
 }
 
 export const Footer = React.memo(({ customLinks, hideEdition }: Props) => {
-  const links = (customLinks || getFooterLinks()).concat(getVersionLinks(hideEdition));
-  const d = new Date();
-  const year = d.getFullYear();
-
-
   return (
     <footer className="footer">
     </footer>
@@ -111,19 +106,3 @@ export const Footer = React.memo(({ customLinks, hideEdition }: Props) => {
 });
 
 Footer.displayName = 'Footer';
-
-function FooterItem({ item }: { item: FooterLink }) {
-  const content = item.url ? (
-    <a href={item.url} target={item.target} rel="noopener noreferrer" id={item.id}>
-      {item.text}
-    </a>
-  ) : (
-    item.text
-  );
-
-  return (
-    <>
-      {item.icon && <Icon name={item.icon} />} {content}
-    </>
-  );
-}
