@@ -1,4 +1,4 @@
-{{HiddenSubject .Subject "Welcome to Grafana"}}
+{{HiddenSubject .Subject "Welcome to StorPool Analytics"}}
 
 Hi {{.Name}},
 
@@ -11,4 +11,4 @@ Thank you for joining our community.
 The Grafana team
 
 
-Sent by Grafana v{{.BuildVersion}} (c) {{now | date "2006"}} Grafana Labs
+Sent by StorPool Analytics v{{.BuildVersion}} (c) {{now | date "2006"}} Grafana Labs

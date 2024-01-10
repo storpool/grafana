@@ -1,4 +1,4 @@
-{{HiddenSubject .Subject "Welcome to Grafana, please complete your sign up!"}}
+{{HiddenSubject .Subject "Welcome to StorPool Analytics, please complete your sign up!"}}
 
 Complete the signup
 
@@ -9,4 +9,4 @@ in the sign up form or use the link below.
 {{.SignUpUrl}}
 
 
-Sent by Grafana v{{.BuildVersion}} (c) {{now | date "2006"}} Grafana Labs
+Sent by StorPool Analytics v{{.BuildVersion}} (c) {{now | date "2006"}} Grafana Labs
