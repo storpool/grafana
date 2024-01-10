@@ -29,7 +29,7 @@ const loginServices: () => LoginServices = () => {
       icon: 'key-skeleton-alt',
     },
     google: {
-      bgColor: '#e84d3c',
+      bgColor: '#fbbc05',
       enabled: oauthEnabled && Boolean(config.oauth.google),
       name: config.oauth?.google?.name || 'Google',
       icon: config.oauth?.google?.icon || ('google' as const),
