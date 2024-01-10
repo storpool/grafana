@@ -111,7 +111,7 @@ require (
 	golang.org/x/oauth2 v0.15.0 // @grafana/grafana-authnz-team
 	golang.org/x/sync v0.5.0 // @grafana/alerting-squad-backend
 	golang.org/x/time v0.5.0 // @grafana/backend-platform
-	golang.org/x/tools v0.16.0 // @grafana/grafana-as-code
+	golang.org/x/tools v0.16.1 // @grafana/grafana-as-code
 	gonum.org/v1/gonum v0.12.0 // @grafana/observability-metrics
 	google.golang.org/api v0.149.0 // @grafana/backend-platform
 	google.golang.org/grpc v1.60.1 // @grafana/plugins-platform-backend
