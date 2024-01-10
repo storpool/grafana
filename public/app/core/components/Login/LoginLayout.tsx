@@ -42,7 +42,9 @@ export const LoginLayout = ({ children, branding, isChangingPassword }: React.Pr
       <div className={loginStyles.loginMain}>
         <div className={cx(loginStyles.loginContent, loginBoxBackground, 'login-content-box')}>
           <div className={loginStyles.loginLogoWrapper}>
-            <Branding.LoginLogo className={loginStyles.loginLogo} logo={loginLogo} />
+            <a href="https://storpool.com" target="_blank">
+              <Branding.LoginLogo className={loginStyles.loginLogo} logo={loginLogo} />
+            </a>
             <div className={loginStyles.titleWrapper}>
               {isChangingPassword ? (
                 <h1 className={loginStyles.mainTitle}>Update your password</h1>
