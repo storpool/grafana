@@ -32,8 +32,6 @@ export const LoginLayout = ({ children, branding, isChangingPassword }: React.Pr
   const loginBoxBackground = branding?.loginBoxBackground || Branding.LoginBoxBackground();
   const loginLogo = branding?.loginLogo;
   const hideEdition = branding?.hideEdition ?? Branding.HideEdition;
-  const d = new Date();
-  const year = d.getFullYear();
 
   useEffect(() => setStartAnim(true), []);
 
@@ -195,9 +193,5 @@ export const getLoginStyles = (theme: GrafanaTheme2) => {
         animation: `${flyInAnimation} ease-out 0.2s`,
       },
     }),
-    spCopyright: css`
-       margin-top: 20px;
-       font-size: 12px;
-    `,
   };
 };
