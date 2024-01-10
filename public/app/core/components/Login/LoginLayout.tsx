@@ -30,6 +30,8 @@ export const LoginLayout = ({ children, branding, isChangingPassword }: React.Pr
   const loginBoxBackground = branding?.loginBoxBackground || Branding.LoginBoxBackground();
   const loginLogo = branding?.loginLogo;
   const hideEdition = branding?.hideEdition ?? Branding.HideEdition;
+  const d = new Date();
+  const year = d.getFullYear();
 
   useEffect(() => setStartAnim(true), []);
 
@@ -52,7 +54,11 @@ export const LoginLayout = ({ children, branding, isChangingPassword }: React.Pr
               )}
             </div>
           </div>
-          <div className={loginStyles.loginOuterBox}>{children}</div>
+          <div className="text-center">
+            <ul className={loginStyles.spCopyright}>
+                 Copyright &copy; {year} <a href="http://storpool.com" target="_blank">StorPool Storage</a>.
+            </ul>
+          </div>
         </div>
       </div>
       {branding?.hideFooter ? <></> : <Footer hideEdition={hideEdition} customLinks={branding?.footerLinks} />}
@@ -176,5 +182,9 @@ export const getLoginStyles = (theme: GrafanaTheme2) => {
     enterAnimation: css({
       animation: `${flyInAnimation} ease-out 0.2s`,
     }),
+    spCopyright: css`
+       margin-top: 20px;
+       font-size: 12px;
+    `,
   };
 };

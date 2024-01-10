@@ -106,12 +106,6 @@ export const Footer = React.memo(({ customLinks, hideEdition }: Props) => {
 
   return (
     <footer className="footer">
-      <div className="text-center">
-        <ul>
-               Copyright &copy; {year} <a href="http://storpool.com" target="_blank">StorPool Storage</a>.
-          ))}
-        </ul>
-      </div>
     </footer>
   );
 });
