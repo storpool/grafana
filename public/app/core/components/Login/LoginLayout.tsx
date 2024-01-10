@@ -57,11 +57,6 @@ export const LoginLayout = ({ children, branding, isChangingPassword }: React.Pr
             </div>
           </div>
          <div className={loginStyles.loginOuterBox}>{children}</div>
-          <div className="text-center">
-            <ul className={loginStyles.spCopyright}>
-                 Copyright &copy; {year} <a href="http://storpool.com" target="_blank">StorPool Storage</a>.
-            </ul>
-          </div>
         </div>
       </div>
       {branding?.hideFooter ? <></> : <Footer hideEdition={hideEdition} customLinks={branding?.footerLinks} />}
