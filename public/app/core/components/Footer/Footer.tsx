@@ -1,8 +1,13 @@
+import { css } from '@emotion/css';
 import React from 'react';
 
-import { LinkTarget } from '@grafana/data';
+import { GrafanaTheme2, LinkTarget } from '@grafana/data';
 import { config } from '@grafana/runtime';
+<<<<<<< HEAD
 import { IconName } from '@grafana/ui';
+=======
+import { Icon, IconName, useStyles2 } from '@grafana/ui';
+>>>>>>> 8c88f605e42 (Chore: Migrate some more scss styles (#88484))
 import { t } from 'app/core/internationalization';
 
 export interface FooterLink {
