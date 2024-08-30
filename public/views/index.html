@@ -43,6 +43,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 0 32px;
       }
 
       .preloader__enter {
@@ -158,8 +159,35 @@
         font-size: 15px;
       }
 
+      .theme-light .preloader--done .preloader__text {
+        color: #52545c !important;
+      }
+
       .preloader--done .preloader__text--fail {
         display: block;
+      }
+
+      .preloader--done .preloader__text--fail a {
+        color: white;
+      }
+      
+      .theme-light .preloader--done .preloader__text--fail a {
+        color: rgb(31, 98, 224);
+      }
+
+      .preloader--done code {
+        white-space: nowrap;
+        padding: 2px 5px;
+        margin: 0px 2px;
+        font-size: 0.8rem;
+        background-color: rgb(24, 27, 31);
+        color: rgb(204, 204, 220);
+        border: 1px solid rgba(204, 204, 220, 0.2);
+        border-radius: 4px;
+      }
+
+      .preloader__error-list li {
+        margin-bottom: 8px;
       }
 
       [ng\:cloak],
