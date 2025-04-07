@@ -3,7 +3,7 @@ import { memo } from 'react';
 
 import { GrafanaTheme2, LinkTarget } from '@grafana/data';
 import { config } from '@grafana/runtime';
-import { IconName } from '@grafana/ui';
+import { IconName, useStyles2 } from '@grafana/ui';
 import { t } from 'app/core/internationalization';
 
 export interface FooterLink {
@@ -51,8 +51,8 @@ export function getVersionMeta(version: string) {
 
 export function getVersionLinks(hideEdition?: boolean): FooterLink[] {
   const { buildInfo, licenseInfo } = config;
-  const links: FooterLink[] = [];
   const stateInfo = licenseInfo.stateInfo ? ` (${licenseInfo.stateInfo})` : '';
+  const links: FooterLink[] = [];
 
   if (!hideEdition) {
     links.push({
@@ -99,11 +99,54 @@ export interface Props {
   hideEdition?: boolean;
 }
 
-export const Footer = React.memo(({ customLinks, hideEdition }: Props) => {
+export const Footer = memo(({ customLinks, hideEdition }: Props) => {
+  const styles = useStyles2(getStyles);
+  const d = new Date();
+  const year = d.getFullYear();
+
   return (
-    <footer className="footer">
+    <footer className={styles.footer}>
+      <div className="text-center">
+        <ul className={styles.list}>
+               Copyright &copy; {year} <a href="http://storpool.com" target="_blank">StorPool Storage</a>.
+        </ul>
+      </div>
     </footer>
   );
 });
 
 Footer.displayName = 'Footer';
+
+const getStyles = (theme: GrafanaTheme2) => ({
+  footer: css({
+    ...theme.typography.bodySmall,
+    color: theme.colors.text.primary,
+    display: 'block',
+    padding: theme.spacing(2, 0),
+    position: 'relative',
+    width: '98%',
+
+    'a:hover': {
+      color: theme.colors.text.maxContrast,
+      textDecoration: 'underline',
+    },
+
+    [theme.breakpoints.down('md')]: {
+      display: 'none',
+    },
+  }),
+  list: css({
+    listStyle: 'none',
+  }),
+  listItem: css({
+    display: 'inline-block',
+    '&:after': {
+      content: "' | '",
+      padding: theme.spacing(0, 1),
+    },
+    '&:last-child:after': {
+      content: "''",
+      paddingLeft: 0,
+    },
+  }),
+});
