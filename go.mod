@@ -71,7 +71,7 @@ require (
 	github.com/gobwas/glob v0.2.3 // @grafana/grafana-backend-group
 	github.com/gogo/protobuf v1.3.2 // @grafana/alerting-backend
 	github.com/golang-jwt/jwt/v4 v4.5.2 // @grafana/grafana-backend-group
-	github.com/golang-migrate/migrate/v4 v4.7.0 // @grafana/grafana-backend-group
+	github.com/golang-migrate/migrate/v4 v4.18.3 // @grafana/grafana-backend-group
 	github.com/golang/mock v1.7.0-rc.1 // @grafana/alerting-backend
 	github.com/golang/protobuf v1.5.4 // @grafana/grafana-backend-group
 	github.com/golang/snappy v0.0.4 // @grafana/alerting-backend
@@ -185,7 +185,7 @@ require (
 	golang.org/x/crypto v0.36.0 // @grafana/grafana-backend-group
 	golang.org/x/exp v0.0.0-20240909161429-701f63a606c0 // @grafana/alerting-backend
 	golang.org/x/mod v0.24.0 // indirect; @grafana/grafana-backend-group
-	golang.org/x/net v0.37.0 // @grafana/oss-big-tent @grafana/partner-datasources
+	golang.org/x/net v0.38.0 // @grafana/oss-big-tent @grafana/partner-datasources
 	golang.org/x/oauth2 v0.27.0 // @grafana/identity-access-team
 	golang.org/x/sync v0.12.0 // @grafana/alerting-backend
 	golang.org/x/text v0.23.0 // @grafana/grafana-backend-group
