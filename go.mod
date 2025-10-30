@@ -74,7 +74,7 @@ require (
 	github.com/golang-migrate/migrate/v4 v4.7.0 // @grafana/grafana-backend-group
 	github.com/golang/mock v1.7.0-rc.1 // @grafana/alerting-backend
 	github.com/golang/protobuf v1.5.4 // @grafana/grafana-backend-group
-	github.com/golang/snappy v0.0.4 // @grafana/alerting-backend
+	github.com/golang/snappy v1.0.0 // @grafana/alerting-backend
 	github.com/google/go-cmp v0.7.0 // @grafana/grafana-backend-group
 	github.com/google/go-github/v70 v70.0.0 // @grafana/grafana-app-platform-squad
 	github.com/google/go-querystring v1.1.0 // indirect; @grafana/oss-big-tent
