@@ -6,7 +6,7 @@ require (
 	cloud.google.com/go/spanner v1.75.0
 	github.com/googleapis/go-sql-spanner v1.11.1
 	github.com/mattn/go-sqlite3 v1.14.22
-	github.com/stretchr/testify v1.10.0
+	github.com/stretchr/testify v1.11.1
 	google.golang.org/api v0.220.0
 	google.golang.org/grpc v1.71.0
 	xorm.io/builder v0.3.6
