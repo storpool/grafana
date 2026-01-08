@@ -20,7 +20,7 @@ require (
 	github.com/grafana/grafana/pkg/apimachinery v0.0.0-20250401081501-6af5fbf3fff0
 	github.com/grafana/grafana/pkg/apiserver v0.0.0-20250325075903-77fa2271be7a
 	github.com/grafana/grafana/pkg/storage/unified/resource v0.0.0-20250317130411-3f270d1de043
-	github.com/stretchr/testify v1.10.0
+	github.com/stretchr/testify v1.11.1
 	gocloud.dev v0.40.0
 	golang.org/x/exp v0.0.0-20240909161429-701f63a606c0
 	google.golang.org/grpc v1.71.0
