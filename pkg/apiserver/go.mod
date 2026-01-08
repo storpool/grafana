@@ -8,7 +8,7 @@ require (
 	github.com/grafana/grafana-app-sdk/logging v0.35.0
 	github.com/grafana/grafana/pkg/apimachinery v0.0.0-20240701135906-559738ce6ae1
 	github.com/prometheus/client_golang v1.21.1
-	github.com/stretchr/testify v1.10.0
+	github.com/stretchr/testify v1.11.1
 	go.opentelemetry.io/contrib/propagators/jaeger v1.34.0
 	go.opentelemetry.io/otel v1.35.0
 	go.opentelemetry.io/otel/trace v1.35.0
