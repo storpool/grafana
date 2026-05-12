@@ -1,6 +1,6 @@
 module bra
 
-go 1.24.1
+go 1.25.0
 
 tool github.com/unknwon/bra
 
@@ -12,11 +12,11 @@ require (
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/smartystreets/goconvey v1.6.4 // indirect
-	github.com/stretchr/testify v1.10.0 // indirect
+	github.com/stretchr/testify v1.11.1 // indirect
 	github.com/unknwon/bra v0.0.0-20200517080246-1e3013ecaff8 // indirect
 	github.com/unknwon/com v1.0.1 // indirect
 	github.com/unknwon/log v0.0.0-20200308114134-929b1006e34a // indirect
 	github.com/urfave/cli v1.22.16 // indirect
-	golang.org/x/sys v0.31.0 // indirect
+	golang.org/x/sys v0.42.0 // indirect
 	gopkg.in/fsnotify/fsnotify.v1 v1.4.7 // indirect
 )
