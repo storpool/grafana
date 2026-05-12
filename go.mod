@@ -1,6 +1,6 @@
 module github.com/grafana/grafana
 
-go 1.24.1
+go 1.25.0
 
 require (
 	buf.build/gen/go/parca-dev/parca/connectrpc/go v1.17.0-20240902100956-02fd72488966.1 // @grafana/observability-traces-and-profiling
@@ -52,7 +52,7 @@ require (
 	github.com/dlmiddlecote/sqlstats v1.0.2 // @grafana/grafana-backend-group
 	github.com/dolthub/go-mysql-server v0.19.1-0.20250327192031-fead86387efc // @grafana/grafana-datasources-core-services
 	github.com/dolthub/vitess v0.0.0-20250325024605-8131be3ca6d3 // @grafana/grafana-datasources-core-services
-	github.com/fatih/color v1.18.0 // @grafana/grafana-backend-group
+	github.com/fatih/color v1.19.0 // @grafana/grafana-backend-group
 	github.com/fullstorydev/grpchan v1.1.1 // @grafana/grafana-backend-group
 	github.com/gchaincl/sqlhooks v1.3.0 // @grafana/grafana-search-and-storage
 	github.com/getkin/kin-openapi v0.131.0 // @grafana/grafana-app-platform-squad
@@ -555,7 +555,7 @@ require (
 	go.uber.org/mock v0.5.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go4.org/netipx v0.0.0-20230125063823-8449b0a6169f // indirect
-	golang.org/x/sys v0.31.0 // indirect
+	golang.org/x/sys v0.42.0 // indirect
 	golang.org/x/term v0.30.0 // indirect
 	golang.org/x/xerrors v0.0.0-20240903120638-7835f813f4da // indirect
 	gomodules.xyz/jsonpatch/v2 v2.5.0 // indirect
