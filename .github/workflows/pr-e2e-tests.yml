@@ -18,11 +18,11 @@ jobs:
     outputs:
       artifact: ${{ steps.artifact.outputs.artifact }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           repository: 'grafana/grafana-build'
           ref: 'main'
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           path: ./grafana
       - run: echo "GRAFANA_GO_VERSION=$(grep "go 1." grafana/go.work |  cut -d\  -f2)" >> "$GITHUB_ENV"

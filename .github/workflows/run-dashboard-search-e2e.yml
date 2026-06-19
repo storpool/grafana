@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Pin Go version to mod file
         uses: actions/setup-go@v5
         with:
@@ -83,7 +83,7 @@ jobs:
 
       steps:
         - name: Checkout repository
-          uses: actions/checkout@v4
+          uses: actions/checkout@v7
 
         - name: Restore Cached Node Modules
           uses: actions/cache@v3
