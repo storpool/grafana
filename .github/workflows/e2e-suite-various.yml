@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest-8-cores
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: ${{ inputs.package }}
       - uses: dagger/dagger-for-github@8.0.0
