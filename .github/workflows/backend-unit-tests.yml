@@ -37,7 +37,7 @@ jobs:
         with:
           go-version-file: go.mod
       - name: Restore GOCACHE
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           key: go-test-cache-${{ github.ref_name }}
           restore-keys: |
@@ -60,7 +60,7 @@ jobs:
         env:
           GH_TOKEN: ${{ steps.generate_token.outputs.token }}
       - name: Save GOCACHE
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v6
         with:
           key: go-test-cache-${{ github.ref_name }}
           path: /home/runner/.cache/go-build
@@ -78,7 +78,7 @@ jobs:
         with:
           go-version-file: go.mod
       - name: Restore GOCACHE
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           key: go-test-cache-${{ github.ref_name }}-enterprise
           restore-keys: |
@@ -105,7 +105,7 @@ jobs:
         env:
           GH_TOKEN: ${{ steps.generate_token.outputs.token }}
       - name: Save GOCACHE
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v6
         with:
           key: go-test-cache-${{ github.ref_name }}-enterprise
           path: /home/runner/.cache/go-build
